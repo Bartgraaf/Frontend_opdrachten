@@ -1,0 +1,105 @@
+body {
+    font-family: 'Syne Mono', monospace;
+    background: honeydew;
+}
+
+.container {
+    padding: 2em;
+    margin: 0 auto;
+
+}
+
+#header-block-title {
+    font-size: 36px;
+    padding: 10px;
+}
+
+.center-title {
+    font-size: 24px;
+}
+
+#header-block {
+    display: flex;
+}
+
+.country-title {
+    font-size: 36px;
+}
+
+#country-block,
+.no-result-block {
+    padding: 12px;
+    background-color: #f0f8ff;
+    border: 3px solid black;
+    border-radius: 8px;
+}
+
+#header-block-title {
+    margin-left: 12px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: 24px auto;
+    justify-content: center;
+}
+
+#search-bar {
+    border: none;
+    whitespace: wrap;
+    border-radius: 5px 5px 5px 5px;
+    background: #E9E9E9;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0.35em 0.75em;
+    border: none;
+    font-size: 1.1em;
+    text-decoration: none;
+    line-height: normal;
+    max-height: 3em;
+
+    flex: 2 0 250px;
+}
+
+#search-bar:focus {
+    background: Thistle;
+    color: white;
+    letter-spacing: .1em;
+    transition: background 400ms ease-in-out;
+    outline: none;
+}
+
+#search-country {
+    flex: 1 0 90px;
+
+    max-height: 3em;
+    font-size: 1.1em;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    border-radius: 0px 5px 5px 0px;
+    background: silver;
+    color: white;
+    border: none;
+    padding: 0.35em 0.75em;
+    cursor: pointer;
+
+}
+
+#search-country:hover {
+    background: skyblue;
+}
+
+@media (max-width: 450px) {
+    body {
+        width: 100%;
+    }
+
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+}
